@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <base href="https://katiekaffe.github.io/civic-lens/">
+  <!-- <base href="https://katiekaffe.github.io/civic-lens/"> -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Civic Lens is an independent news organization committed to unbiased reporting, investigative journalism, and truth-driven storytelling.">
   <meta name="author" content="Civic Lens">
@@ -75,7 +75,7 @@
         <article>
           <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
           <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.</p>
-          <video controls width="480" preload="metadata">
+          <video controls preload="metadata">
             <source src="videos/water-management.mp4" type="video/mp4">
             <p>Your browser doesn't support embedded video. You can <a href="videos/water-management.mp4">download the video</a> instead.</p>
           </video>
@@ -84,7 +84,7 @@
         <article>
           <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
           <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.</p>
-          <video controls width="480" preload="metadata">
+          <video controls preload="metadata">
             <source src="videos/voter-suppression.mp4" type="video/mp4">
             <p>Your browser doesn't support embedded video. You can <a href="videos/voter-suppression.mp4">download the video</a> instead.</p>
           </video>
@@ -159,102 +159,59 @@
       <section id="alerts">
         <h2>Stay Informed. Stay Empowered.</h2>
           <p>Receive text messages with the news you want to know.</p>
-      
-        <form method="post" action="https://wp.zybooks.com/form-viewer.php">
+          
+        <div class="alerts-box">
+          <form method="post" action="https://wp.zybooks.com/form-viewer.php">
 
-          <label for="name">Name<span class="required" aria-hidden="true">*</span></label>
-          <input id="name" name="name" type="text" autocomplete="name" required>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name">
 
-          <label for="phone">Mobile<span class="required" aria-hidden="true">*</span></label>
-          <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+            <label for="phone">Mobile</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel">
 
-          <fieldset id="notification-preferences">
-            <legend>Notification Preferences<span class="required" aria-hidden="true">*</span></legend>
+            <fieldset id="notification-preferences">
+              <legend>Notification Preferences</legend>
 
-            <input type="checkbox" id="preference-breaking" name="preferences" value="breaking-news">
-            <label for="preference-breaking">Breaking News</label>
+              <input type="checkbox" id="preference-breaking" name="preferences" value="breaking-news">
+              <label for="preference-breaking">Breaking News</label>
 
-            <input type="checkbox" id="preference-politics" name="preferences" value="politics">
-            <label for="preference-politics">Politics</label>
+              <input type="checkbox" id="preference-politics" name="preferences" value="politics">
+              <label for="preference-politics">Politics</label>
 
-            <input type="checkbox" id="preference-weather" name="preferences" value="weather">
-            <label for="preference-weather">Weather</label>
+              <input type="checkbox" id="preference-weather" name="preferences" value="weather">
+              <label for="preference-weather">Weather</label>
 
-            <input type="checkbox" id="preference-sports" name="preferences" value="sports">
-            <label for="preference-sports">Sports</label>
+              <input type="checkbox" id="preference-sports" name="preferences" value="sports">
+              <label for="preference-sports">Sports</label>
 
-            <input type="checkbox" id="preference-entertainment" name="preferences" value="entertainment">
-            <label for="preference-entertainment">Entertainment</label>
+              <input type="checkbox" id="preference-entertainment" name="preferences" value="entertainment">
+              <label for="preference-entertainment">Entertainment</label>
 
-            <input type="checkbox" id="preference-world" name="preferences" value="world">
-            <label for="preference-world">World</label>
+              <input type="checkbox" id="preference-world" name="preferences" value="world">
+              <label for="preference-world">World</label>
 
-            <input type="checkbox" id="preference-financial" name="preferences" value="financial">
-            <label for="preference-financial">Financial</label>
-          </fieldset>
+              <input type="checkbox" id="preference-financial" name="preferences" value="financial">
+              <label for="preference-financial">Financial</label>
+            </fieldset>
 
-          <input type="submit" name="subscribe" value="Subscribe">
-        </form>
+            <input type="submit" name="subscribe" value="Subscribe">
+          </form>
+        </div>
       </section>
   </main> 
 
   <footer>
-    <h2 id="social">Follow Us</h2>
-    <ul class="social-links">
-      <li>
-        <a href="https://twitter.com/CivicLensNews">
-          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
-            <path d="M4 4l11.733 16h4.267l-11.733 -16z"/>
-            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/>
-          </svg>
-          <span class="sr-only">Twitter/X</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://instagram.com/CivicLensNews">
-          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
-            <rect x="4" y="4" width="16" height="16" rx="4"/>
-            <circle cx="12" cy="12" r="3.5"/>
-            <circle cx="16.5" cy="7.5" r="0.5" fill="currentColor"/>
-          </svg>
-          <span class="sr-only">Instagram</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://youtube.com/@CivicLensNews">
-          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
-            <path d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z"/>
-          </svg>
-          <span class="sr-only">YouTube</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://tiktok.com/@CivicLensNews">
-          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
-            <path d="M9 3v11.5a2.5 2.5 0 1 1 -2 -2.45"/>
-            <path d="M9 7a4.5 4.5 0 0 0 4.5 4.5"/>
-            <path d="M9 3a4.5 4.5 0 0 0 4.5 4.5"/>
-            <path d="M13.5 7.5v4"/>
-          </svg>
-          <span class="sr-only">TikTok</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://linkedin.com/company/CivicLensNews">
-          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
-            <rect x="3" y="3" width="18" height="18" rx="2"/>
-            <path d="M8 11v5" stroke="var(--watchdog-white, #fff)" stroke-width="1.5"/>
-            <circle cx="8" cy="8" r="1" fill="var(--watchdog-white, #fff)"/>
-            <path d="M12 16v-3a2 2 0 0 1 4 0v3" stroke="var(--watchdog-white, #fff)" stroke-width="1.5" fill="none"/>
-            <path d="M12 11v5" stroke="var(--watchdog-white, #fff)" stroke-width="1.5"/>
-          </svg>
-          <span class="sr-only">LinkedIn</span>
-        </a>
-      </li>
-    </ul>
+  <h2 id="social">Follow Us</h2>
+  <ul class="social-links">
+    <li><a href="https://twitter.com/CivicLensNews">Twitter/X</a></li>
+    <li><a href="https://instagram.com/CivicLensNews">Instagram</a></li>
+    <li><a href="https://youtube.com/@CivicLensNews">YouTube</a></li>
+    <li><a href="https://tiktok.com/@CivicLensNews">TikTok</a></li>
+    <li><a href="https://linkedin.com/company/CivicLensNews">LinkedIn</a></li>
+  </ul>
 
-    <small>&copy; 2025 Civic Lens. All rights reserved.</small>
-  </footer>
+  <small>&copy; 2025 Civic Lens. All rights reserved.</small>
+</footer>
         
   <script>
     const toggleButton = document.getElementById('theme-toggle');
