@@ -101,8 +101,6 @@ body.dark-mode {
   border: 0;
 }
 
-/* ///ADD/// Navigation Styles */
-
 /* ///ADD/// Global Layout Styles */
 header {
   background-color: var(--blue-bulletin);
@@ -137,6 +135,7 @@ section {
   border: 1px solid var(--story-subtitle);
   padding: 1rem;
   margin-bottom: 1rem;
+  box-shadow: var(--shadow);
 }
 
 /* Alerts / subscribe form */
@@ -201,6 +200,8 @@ footer {
   align-items: center;
   gap: 0.5rem;
 }
+
+/* ///ADD/// Navigation Styles */
 
 /* ///ADD/// Global Text Styles */
 body {
