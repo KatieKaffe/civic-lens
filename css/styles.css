@@ -273,7 +273,6 @@ video {
   margin-bottom: .25rem;
   background-color: var(--blue-bulletin);
   color: var(--watchdog-white);
-  border: none;
   box-shadow: var(--shadow);
   cursor: pointer;
   font-size: 1rem;
@@ -579,28 +578,27 @@ footer small {
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
 @media (prefers-color-scheme: dark) {
   body:not(.light-mode):not(.dark-mode) {
-      background-color: var(--truth-text);
-      color: var(--watchdog-white);
-    }
+    background-color: var(--truth-text);
+    color: var(--watchdog-white);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body:not(.light-mode):not(.dark-mode) {
+    background-color: var(--watchdog-white);
+    color: var(--truth-text);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
   }
 
-  @media (prefers-color-scheme: light) {
-    body:not(.light-mode):not(.dark-mode) {
-      background-color: var(--watchdog-white);
-      color: var(--truth-text);
-    }
-
-  @media (prefers-reduced-motion: reduce) {
-    * {
-      transition: none !important;
-    }
-
-    #breaking-news article:hover,
-    #featured-articles article:hover {
-      transform: none;
-    }
+  #breaking-news article:hover,
+  #featured-articles article:hover {
+    transform: none;
   }
-
 }
 
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
