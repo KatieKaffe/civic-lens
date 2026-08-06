@@ -3,19 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="https://kecole6.github.io/civic-lens/">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Civic Lens is an independent news organization committed to unbiased reporting, investigative journalism, and truth-driven storytelling.">
   <meta name="author" content="Civic Lens">
+  <meta name="robots" content="index, follow">
 
 <!-- ADD Open Graph Meta for title, description, image, url, type -->
+  <meta property="og:title" content="Civic Lens">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Civic Lens is an independent news organization committed to unbiased reporting, investigative journalism, and truth-driven storytelling.">
+  <meta property="og:image" content="https://kecole6.github.io/civic-lens/images/[some-image].jpg">
+  <meta property="og:url" content="https://kecole6.github.io/civic-lens/">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@CivicLensNews">
+  <meta name="twitter:creator" content="@CivicLensNews">
+  <meta name="twitter:title" content="Civic Lens">
+  <meta name="twitter:description" content="Civic Lens is an independent news organization committed to unbiased reporting, investigative journalism, and truth-driven storytelling.">
+  <meta name="twitter:image" content="https://kecole6.github.io/civic-lens/images/[some-image].jpg">
 
 <!-- ADD link to stylesheet -->
+  <link rel="canonical" href="https://kecole6.github.io/civic-lens/">
+  <link rel="author" href="https://github.com/KatieKaffe">
+  <link rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">  
+  <link href="./css/styles.css" rel="stylesheet" type="text/css">
 
   <title>Civic Lens</title>
 </head>
 <body>
 <!-- ADD semantic and validated HTML -->
 <!-- ADD skip to main content -->
+  <a href="#main" class="sr-only">Skip to main content</a>
+  <a href="#breaking-news" class="sr-only">Skip to breaking news</a>
+  <a href="#featured-articles" class="sr-only">Skip to featured articles</a>
+  <a href="#alerts" class="sr-only">Skip to alerts</a>
+  <a href="#social" class="sr-only">Skip to social</a>
+
+  <header>
     <button id="theme-toggle" aria-label="Toggle light/dark mode">
       <svg width="35px" height="35px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
         <defs><clipPath id="a"><path d="m18.512 18.512h62.977v62.977h-62.977z"/></clipPath></defs>
@@ -23,101 +48,213 @@
       </svg>
     </button>
 
-      Civic Lens
+      <h1>Civic Lens</h1>
       <p class="tagline">See Clearly. Know Deeply. Act Justly.</p>
-      
-      <nav class="mobile-nav" aria-label="Mobile Navigation">
-        <input type="checkbox" id="menu-toggle" hidden>
-        <label for="menu-toggle" class="menu-button">Menu</label>
-        <ul class="menu">
-          <li><a href="#breaking-news">Breaking News</a></li>
-          <li><a href="#featured-aticles">Featured Articles</a></li>
-          <li><a href="#alerts">Alerts</a></li>
-          <li><a href="#social">Social</a></li>
-        </ul>
-      </nav>
-      
-      Welcome to Civic Lens
-        We are an independent news organization dedicated to unbiased reporting, investigative journalism, and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light on the systems that shape our society.</p>
+
+  </header>
+  
+  <nav class="mobile-nav" aria-label="Mobile Navigation">
+    <input type="checkbox" id="menu-toggle" hidden>
+    <label for="menu-toggle" class="menu-button">Menu</label>
+    <ul class="menu">
+      <li><a href="#breaking-news">Breaking News</a></li>
+      <li><a href="#featured-articles">Featured Articles</a></li>
+      <li><a href="#alerts">Alerts</a></li>
+      <li><a href="#social">Social</a></li>
+    </ul>
+  </nav>
+
+  <main id="main"> 
+      <h2>Welcome to Civic Lens</h2>
+        <p>We are an independent news organization dedicated to unbiased reporting, investigative journalism, and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light on the systems that shape our society.</p>
         <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
 
-      Breaking News
+      <section  id="breaking-news">
+        <h2>Breaking News</h2>
 
-        Federal Investigation Launched into Water Mismanagement in the Southwest
-        The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.
-        videos/water-management.mp4
+        <article>
+          <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
+          <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.</p>
+          <video controls width="480" preload="metadata">
+            <source src="videos/water-management.mp4" type="video/mp4">
+            <p>Your browser doesn't support embedded video. You can <a href="videos/water-management.mp4">download the video</a> instead.</p>
+          </video>
+        </article>
+
+        <article>
+          <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
+          <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.</p>
+          <video controls width="480" preload="metadata">
+            <source src="videos/voter-suppression.mp4" type="video/mp4">
+            <p>Your browser doesn't support embedded video. You can <a href="videos/voter-suppression.mp4">download the video</a> instead.</p>
+          </video>
+        </article>  
+
+      </section>  
+
+      <section id="featured-articles">
+        <h2>Featured Articles</h2>
+
+        <article> 
+          <h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3>
+          <p>Former employees speak out about ethical breaches in data privacy and surveillance.</p>
+        </article>   
+
+        <article>
+          <h3>Unequal Justice: How Bail Systems Harm the Poor</h3>
+          <p>An investigative series on cash bail and its disproportionate impact.</p>
+        </article>
         
-        Voter Suppression Bill Faces Pushback in State Supreme Court
-        Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.
-        videos/voter-suppression.mp4
+        <article>
+          <h3>Invisible Work: The Lives of Migrant Caregivers</h3>
+          <p>Humanizing the labor that keeps households and economies afloat.</p>
+        </article>
         
-      Featured Articles
+        <article>
+          <h3>Redlined Still: A New Map of Modern-Day Housing Discrimination</h3>
+          <p>Data visualization showing systemic inequality in real estate today.</p>
+        </article> 
+
+        <article>
+          <h3>Climate Injustice: Who Pays for Pollution?</h3>
+          <p>Communities of color bear the brunt of environmental damage.</p>
+        </article>
         
-        The Cost of Silence: Whistleblower Stories from Inside Tech Giants
-        Former employees speak out about ethical breaches in data privacy and surveillance.
+        <article>
+          <h3>Teaching Under Fire: The Fight for Inclusive Education</h3>
+          <p>Teachers navigate book bans, curriculum restrictions, and culture wars.</p>
+        </article>
         
-        Unequal Justice: How Bail Systems Harm the Poor
-        An investigative series on cash bail and its disproportionate impact.
+        <article>
+          <h3>Food Deserts and Corporate Abandonment</h3>
+          <p>Why access to nutrition is a zip code lottery.</p>
+        </article>
         
-        Invisible Work: The Lives of Migrant Caregivers
-        Humanizing the labor that keeps households and economies afloat.
+        <article>
+          <h3>Policing Mental Health: A Broken Response System</h3>
+          <p>Examining police interactions with those in crisis.</p>
+        </article>
         
-        Redlined Still: A New Map of Modern-Day Housing Discrimination
-        Data visualization showing systemic inequality in real estate today.
+        <article>
+          <h3>The Disinformation Economy</h3>
+          <p>Tracing profit motives behind fake news empires.</p>
+        </article>
+
+        <article>
+          <h3>Facing the Algorithm: AI and Racial Bias</h3>
+          <p>The coded inequalities that shape our lives.</p>
+        </article>
         
-        Climate Injustice: Who Pays for Pollution?
-        Communities of color bear the brunt of environmental damage.
+        <article>
+          <h3>The Voting Maze</h3>
+          <p>A guide to understanding your rights amid changing laws.</p>
+        </article>
         
-        Teaching Under Fire: The Fight for Inclusive Education
-        Teachers navigate book bans, curriculum restrictions, and culture wars.
-        
-        Food Deserts and Corporate Abandonment
-        Why access to nutrition is a zip code lottery.
-        
-        Policing Mental Health: A Broken Response System
-        Examining police interactions with those in crisis.
-        
-        The Disinformation Economy
-        Tracing profit motives behind fake news empires.
-        
-        Facing the Algorithm: AI and Racial Bias
-        The coded inequalities that shape our lives.
-        
-        The Voting Maze
-        A guide to understanding your rights amid changing laws.
-        
-        After the Cameras Leave: Long-Term Crisis Recovery
-        Rebuilding trust and infrastructure in disaster-hit communities.
-        
-        
-      Stay Informed. Stay Empowered.
-        Receive text messages with the news you want to know.
-        
-        Name
-        
-        Mobile
-        
-        Notification Preferences
-        
-        Breaking News
-        Politics
-        Weather
-        Sports
-        Entertainment
-        World
-        Financial
-        
-        Subscribe
+        <article>
+          <h3>After the Cameras Leave: Long-Term Crisis Recovery</h3>
+          <p>Rebuilding trust and infrastructure in disaster-hit communities.</p>
+        </article>
+      </section>  
       
-      Follow Us
-        Twitter/X
-        Instagram
-        YouTube
-        TikTok
-        LinkedIn
-        
-        &copy; 2025 Civic Lens. All rights reserved.
-        
+      <section id="alerts">
+        <h2>Stay Informed. Stay Empowered.</h2>
+          <p>Receive text messages with the news you want to know.</p>
+      
+        <form method="post" action="https://wp.zybooks.com/form-viewer.php">
+
+          <label for="name">Name<span class="required" aria-hidden="true">*</span></label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+
+          <label for="phone">Mobile<span class="required" aria-hidden="true">*</span></label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+
+          <fieldset id="notification-preferences">
+            <legend>Notification Preferences<span class="required" aria-hidden="true">*</span></legend>
+
+            <input type="checkbox" id="preference-breaking" name="preferences" value="breaking-news">
+            <label for="preference-breaking">Breaking News</label>
+
+            <input type="checkbox" id="preference-politics" name="preferences" value="politics">
+            <label for="preference-politics">Politics</label>
+
+            <input type="checkbox" id="preference-weather" name="preferences" value="weather">
+            <label for="preference-weather">Weather</label>
+
+            <input type="checkbox" id="preference-sports" name="preferences" value="sports">
+            <label for="preference-sports">Sports</label>
+
+            <input type="checkbox" id="preference-entertainment" name="preferences" value="entertainment">
+            <label for="preference-entertainment">Entertainment</label>
+
+            <input type="checkbox" id="preference-world" name="preferences" value="world">
+            <label for="preference-world">World</label>
+
+            <input type="checkbox" id="preference-financial" name="preferences" value="financial">
+            <label for="preference-financial">Financial</label>
+          </fieldset>
+
+          <input type="submit" name="subscribe" value="Subscribe">
+        </form>
+      </section>
+  </main> 
+
+  <footer>
+    <h2 id="social">Follow Us</h2>
+    <ul class="social-links">
+      <li>
+        <a href="https://twitter.com/CivicLensNews">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+            <path d="M4 4l11.733 16h4.267l-11.733 -16z"/>
+            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/>
+          </svg>
+          <span class="sr-only">Twitter/X</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com/CivicLensNews">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="4" y="4" width="16" height="16" rx="4"/>
+            <circle cx="12" cy="12" r="3.5"/>
+            <circle cx="16.5" cy="7.5" r="0.5" fill="currentColor"/>
+          </svg>
+          <span class="sr-only">Instagram</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://youtube.com/@CivicLensNews">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+            <path d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z"/>
+          </svg>
+          <span class="sr-only">YouTube</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://tiktok.com/@CivicLensNews">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+            <path d="M9 3v11.5a2.5 2.5 0 1 1 -2 -2.45"/>
+            <path d="M9 7a4.5 4.5 0 0 0 4.5 4.5"/>
+            <path d="M9 3a4.5 4.5 0 0 0 4.5 4.5"/>
+            <path d="M13.5 7.5v4"/>
+          </svg>
+          <span class="sr-only">TikTok</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://linkedin.com/company/CivicLensNews">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <path d="M8 11v5" stroke="var(--watchdog-white, #fff)" stroke-width="1.5"/>
+            <circle cx="8" cy="8" r="1" fill="var(--watchdog-white, #fff)"/>
+            <path d="M12 16v-3a2 2 0 0 1 4 0v3" stroke="var(--watchdog-white, #fff)" stroke-width="1.5" fill="none"/>
+            <path d="M12 11v5" stroke="var(--watchdog-white, #fff)" stroke-width="1.5"/>
+          </svg>
+          <span class="sr-only">LinkedIn</span>
+        </a>
+      </li>
+    </ul>
+
+    <small>&copy; 2025 Civic Lens. All rights reserved.</small>
+  </footer>
         
   <script>
     const toggleButton = document.getElementById('theme-toggle');
